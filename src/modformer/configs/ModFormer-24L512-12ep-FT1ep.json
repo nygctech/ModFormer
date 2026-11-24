@@ -1,0 +1,161 @@
+{
+  "arch": {
+    "backbone_dim": 1280,
+    "block_type": "pairformer",
+    "c_outer_lang": 48,
+    "c_outer_tower": 32,
+    "catalogue_readout": "separate",
+    "context_cls_bias": false,
+    "context_conditioning": true,
+    "context_factors": {
+      "catalogue": [
+        "none",
+        "none",
+        "none"
+      ],
+      "hs_gtex_alu_artery": [
+        "duplex",
+        "human",
+        "gtex_artery"
+      ],
+      "hs_gtex_alu_brain": [
+        "duplex",
+        "human",
+        "gtex_brain"
+      ],
+      "hs_gtex_alu_liver": [
+        "duplex",
+        "human",
+        "gtex_liver"
+      ],
+      "hs_gtex_alu_muscle": [
+        "duplex",
+        "human",
+        "gtex_muscle"
+      ],
+      "hs_gtex_alu_rnaseq": [
+        "duplex",
+        "human",
+        "gtex_combined"
+      ],
+      "hs_hek293ft_drna": [
+        "drna",
+        "human",
+        "hek293ft"
+      ],
+      "mm_brain_drna": [
+        "drna",
+        "mouse",
+        "mouse_brain"
+      ],
+      "mm_neuro2a_drna": [
+        "drna",
+        "mouse",
+        "n2a"
+      ],
+      "ob_bimaculoides_zhang2023_rnaseq": [
+        "duplex",
+        "o_bimaculoides",
+        "none"
+      ],
+      "pf_flava_zhang2023_rnaseq": [
+        "duplex",
+        "p_flava",
+        "none"
+      ],
+      "sp_purpuratus_zhang2023_rnaseq": [
+        "duplex",
+        "s_purpuratus",
+        "none"
+      ]
+    },
+    "context_into_classifier": true,
+    "context_vocab": [
+      "catalogue",
+      "hs_gtex_alu_rnaseq",
+      "hs_hek293ft_drna",
+      "mm_neuro2a_drna",
+      "mm_brain_drna",
+      "sp_purpuratus_zhang2023_rnaseq",
+      "pf_flava_zhang2023_rnaseq",
+      "ob_bimaculoides_zhang2023_rnaseq",
+      "hs_gtex_alu_brain",
+      "hs_gtex_alu_artery",
+      "hs_gtex_alu_liver",
+      "hs_gtex_alu_muscle"
+    ],
+    "conv_kernel": "0",
+    "d_ff_factor_pair": 4,
+    "d_ff_factor_single": 4,
+    "d_out_lang": 256,
+    "d_out_tower": 256,
+    "d_p": 128,
+    "d_s": 512,
+    "edit_rate_thr": 0.1,
+    "gather": true,
+    "head_mode": "cls+reg",
+    "head_pair_diag": true,
+    "head_row_pool": "attn",
+    "head_row_pool_bp_bias": false,
+    "n_heads": 16,
+    "n_layers": 24,
+    "n_rate_bins": 17,
+    "nt_inject": false,
+    "pair_cell_hidden": 256,
+    "pair_ch_axial": true,
+    "pair_ch_bp": true,
+    "pair_ch_helix": true,
+    "pair_ch_relpos": true,
+    "pair_lang_branch": true,
+    "pair_tower_branch": true,
+    "rate_bin_min": 0.002,
+    "rate_head": "binned",
+    "relpos_cross_buckets": 8,
+    "relpos_within_clamp": 63,
+    "seq_embed_only": false,
+    "shuffle_bpp": false,
+    "struct_attn_bias": false,
+    "tissue_conditioning": "off",
+    "tower_annot_classes": 6,
+    "tower_dilations": "1,2,4,8,16,32",
+    "tower_dim": 256,
+    "tower_motif_dim": 128,
+    "tower_motif_kernels": "3,6,9,12",
+    "tower_over_tile": false,
+    "tower_str_leg": true,
+    "tower_struct_annot": true,
+    "tri_mul": "both",
+    "trunk_p2s": "pair_weighted",
+    "trunk_pair_bias": true,
+    "trunk_qk_norm": false,
+    "trunk_s2p_dim": 32,
+    "trunk_s2p_period": 1
+  },
+  "features": {
+    "anchor_len": 64,
+    "embedding_stride": 128,
+    "embedding_window": 1022,
+    "fold": {
+      "dangles": 2,
+      "engine": "ViennaRNA",
+      "salt": 0.15,
+      "temperature": 37.0,
+      "version": "2.7.2"
+    },
+    "fold_window": 1022,
+    "gather_conf": 0.5,
+    "gather_gap_tol": 4,
+    "gather_group_tol": 8,
+    "gather_register_tol": 4,
+    "gather_tie_tol": 0.95,
+    "language_model": "multimolecule/rinalmo-giga",
+    "language_model_revision": "2a71f6f98fb41dd2e6542a5e131d3778111d1468",
+    "partner_len": 64,
+    "partner_mode": "fold",
+    "tile": 128
+  },
+  "format_version": 2,
+  "n_float_params": 116647058,
+  "n_tensors": 1826,
+  "name": "ModFormer-24L512-12ep-FT1ep"
+}

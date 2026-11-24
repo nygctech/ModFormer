@@ -1,0 +1,111 @@
+cff-version: 1.2.0
+message: "If you use ModFormer, please cite the paper."
+title: "ModFormer: A unified structure-aware model of transcriptome-wide A-to-I RNA editing"
+type: software
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/nygctech/ModFormer"
+authors:
+  - family-names: Slater
+    given-names: Cody
+  - family-names: Nassar
+    given-names: Estelle
+  - family-names: Dreesen Bonet
+    given-names: Nicholas
+  - family-names: Yuan
+    given-names: Beline
+  - family-names: Lee
+    given-names: James Hyojae
+  - family-names: Domović
+    given-names: Daniel
+  - family-names: Espinosa
+    given-names: Lucas
+  - family-names: Garbulowski
+    given-names: Mateusz
+  - family-names: Daly
+    given-names: Aidan
+  - family-names: Vicković
+    given-names: Sanja
+preferred-citation:
+  type: article
+  title: "ModFormer: A unified structure-aware model of transcriptome-wide A-to-I RNA editing"
+  journal: "bioRxiv"
+  year: 2026
+  authors:
+    - family-names: Slater
+      given-names: Cody
+    - family-names: Nassar
+      given-names: Estelle
+    - family-names: Dreesen Bonet
+      given-names: Nicholas
+    - family-names: Yuan
+      given-names: Beline
+    - family-names: Lee
+      given-names: James Hyojae
+    - family-names: Domović
+      given-names: Daniel
+    - family-names: Espinosa
+      given-names: Lucas
+    - family-names: Garbulowski
+      given-names: Mateusz
+    - family-names: Daly
+      given-names: Aidan
+    - family-names: Vicković
+      given-names: Sanja
+references:
+  - type: article
+    title: "RiNALMo: General-purpose RNA language models can generalize well on structure prediction tasks"
+    journal: "Nature Communications"
+    volume: 16
+    start: 5671
+    year: 2025
+    doi: "10.1038/s41467-025-60026-5"
+    authors:
+      - family-names: Penić
+        given-names: Rafael Josip
+      - family-names: Vlašić
+        given-names: Tin
+      - family-names: Huber
+        given-names: Roland G.
+      - family-names: Wan
+        given-names: Yue
+      - family-names: Šikić
+        given-names: Mile
+  - type: article
+    title: "ViennaRNA Package 2.0"
+    journal: "Algorithms for Molecular Biology"
+    volume: 6
+    start: 26
+    year: 2011
+    doi: "10.1186/1748-7188-6-26"
+    authors:
+      - family-names: Lorenz
+        given-names: Ronny
+      - family-names: Bernhart
+        given-names: Stephan H.
+      - family-names: Höner zu Siederdissen
+        given-names: Christian
+      - family-names: Tafer
+        given-names: Hakim
+      - family-names: Flamm
+        given-names: Christoph
+      - family-names: Stadler
+        given-names: Peter F.
+      - family-names: Hofacker
+        given-names: Ivo L.
+  - type: article
+    title: "Accurate structure prediction of biomolecular interactions with AlphaFold 3"
+    journal: "Nature"
+    volume: 630
+    start: 493
+    end: 500
+    year: 2024
+    doi: "10.1038/s41586-024-07487-w"
+    authors:
+      - family-names: Abramson
+        given-names: Josh
+      - family-names: Adler
+        given-names: Jonas
+      - family-names: Dunger
+        given-names: Jack
+      - name: "and others"

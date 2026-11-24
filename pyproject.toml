@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "modformer"
+dynamic = ["version"]
+description = "A unified structure-aware model of transcriptome-wide A-to-I RNA editing"
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "The ModFormer authors" }]
+requires-python = ">=3.10,<3.15"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+  "torch>=2.4",
+  "multimolecule==0.2.0",
+  "transformers>=5.12,<6",
+  "huggingface_hub>=1.0",
+  "ViennaRNA==2.7.2",
+  "safetensors>=0.4",
+  "numpy>=1.26",
+  "pandas>=2.0",
+  "matplotlib>=3.8",
+  "prompt_toolkit>=3.0.50,<4",
+]
+
+[project.optional-dependencies]
+gget = ["gget>=0.29"]
+notebooks = ["jupyter", "nbclient", "nbformat", "ipykernel"]
+
+[project.urls]
+Homepage = "https://github.com/nygctech/ModFormer"
+
+[project.scripts]
+modformer = "modformer.cli:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "modformer.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+modformer = ["data/*", "configs/*.json"]
