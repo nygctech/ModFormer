@@ -5,7 +5,7 @@
 <p align="center">A unified structure-aware model of transcriptome-wide A-to-I RNA editing</p>
 
 <p align="center">
-<a href="#install">Install</a> · <a href="#use">Use</a> · <a href="CLI.md">Command line</a> · <a href="#figures">Figures</a> · <a href="#cite">Cite</a>
+<a href="https://doi.org/10.64898/2026.11.23.768611">Preprint</a> · <a href="#install">Install</a> · <a href="#use">Use</a> · <a href="CLI.md">Command line</a> · <a href="#figures">Figures</a> · <a href="#cite">Cite</a>
 </p>
 
 <p align="center">
@@ -81,6 +81,7 @@ jupyter lab notebooks/
 > Slater C, Nassar E, Dreesen Bonet N, Yuan B, Lee JH, Domović D, Espinosa L, Garbulowski M,
 > Daly A, Vicković S. ModFormer: A unified structure-aware model of transcriptome-wide
 > A-to-I RNA editing. bioRxiv (2026).
+> [doi:10.64898/2026.11.23.768611](https://doi.org/10.64898/2026.11.23.768611)
 
 Also cite the work ModFormer builds on:
 

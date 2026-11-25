@@ -30,7 +30,9 @@ preferred-citation:
   type: article
   title: "ModFormer: A unified structure-aware model of transcriptome-wide A-to-I RNA editing"
   journal: "bioRxiv"
+  doi: "10.64898/2026.11.23.768611"
   year: 2026
+  month: 11
   authors:
     - family-names: Slater
       given-names: Cody
